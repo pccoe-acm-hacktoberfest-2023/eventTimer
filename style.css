@@ -8,11 +8,11 @@ body {
   font-family: 'Arial', sans-serif;
   display: flex;
   flex-direction: column; /* Stack children vertically */
-  justify-content: center; /* Center the container vertically */
+  justify-content: flex-start; /* Start from the top */
   min-height: 100vh; /* Ensure full height */
   background-color: #282c34; /* Set background color */
   color: white;
-  overflow: hidden; /* Prevent scrollbars */
+  overflow-y: auto; /* Allow vertical scrolling */
 }
 
 .container {
@@ -20,6 +20,7 @@ body {
   margin: 20px auto; /* Center the container horizontally */
   padding: 30px; /* Increase padding for a more spacious feel */
   max-width: 600px; /* Limit max width for better readability */
+  flex: 1; /* Allow the container to grow */
 }
 
 h1 {
@@ -47,6 +48,7 @@ h1 {
 .event-input button {
   padding: 10px 20px;
   font-size: 16px;
+  width: 150px; /* Fixed width for button */
   cursor: pointer;
   background-color: #1D85FF; /* Button color */
   color: white; /* Text color */
@@ -100,7 +102,7 @@ h1 {
 }
 
 .footer {
-  background-color: #F9A800; /* Hacktoberfest color */
+  background-color: #50da4c; /* Hacktoberfest color */
   padding: 20px;
   text-align: center;
   width: 100%; /* Ensure full width */
@@ -135,6 +137,6 @@ h1 {
 /* Media query for responsiveness */
 @media (max-width: 600px) {
   h1 {
-      font-size: 2rem; /* Reduce font size on smaller screens */
+    font-size: 2rem; /* Reduce font size on smaller screens */
   }
 }
