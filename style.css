@@ -91,3 +91,38 @@ h1 {
   margin-top: 5px;
   color: #ddd; /* Lighter color for description */
 }
+
+.footer {
+  background-color: #F9A800; /* Hacktoberfest color */
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  color: #282c34; /* Dark text for contrast */
+}
+
+.footer-content {
+  max-width: 600px; /* Limit max width for better readability */
+  margin: 0 auto; /* Center the footer content */
+}
+
+.footer p {
+  margin: 10px 0;
+}
+
+.social-links {
+  margin: 10px 0;
+}
+
+.social-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #282c34; /* Dark text for links */
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #1D85FF; /* Change color on hover */
+}
