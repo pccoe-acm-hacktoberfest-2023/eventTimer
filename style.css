@@ -10,21 +10,16 @@ body {
   flex-direction: column; /* Stack children vertically */
   justify-content: center; /* Center the container vertically */
   min-height: 100vh; /* Ensure full height */
-  background-image: url('path/to/your/hero-image.jpg'); /* Background image */
-  background-size: cover; /* Cover the entire viewport */
-  background-position: center; /* Center the image */
+  background-color: #282c34; /* Set background color */
   color: white;
   overflow: hidden; /* Prevent scrollbars */
 }
 
 .container {
-  flex-grow: 1; /* Allow the container to grow and push the footer down */
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.7); /* Black with transparency */
-  border-radius: 10px; /* Rounded corners */
+  margin: 20px auto; /* Center the container horizontally */
   padding: 30px; /* Increase padding for a more spacious feel */
   max-width: 600px; /* Limit max width for better readability */
-  margin: 20px auto; /* Center the container horizontally */
 }
 
 h1 {
@@ -36,18 +31,17 @@ h1 {
 .event-input {
   margin-bottom: 20px;
   display: flex; /* Use flexbox for layout */
-  flex-direction: column; /* Stack inputs and button vertically */
-  align-items: center; /* Center items */
+  justify-content: center; /* Center inputs and button */
+  align-items: center; /* Align items vertically */
 }
 
 .event-input input {
   padding: 10px;
   font-size: 16px;
-  margin-bottom: 10px; /* Add space below inputs */
-  width: 100%; /* Full width for inputs */
-  max-width: 300px; /* Limit input width */
+  margin-right: 10px; /* Space between input fields and button */
   border: none; /* No border for cleaner look */
   border-radius: 5px; /* Rounded corners */
+  flex: 1; /* Allow inputs to grow */
 }
 
 .event-input button {
@@ -59,8 +53,6 @@ h1 {
   border: none; /* No border */
   border-radius: 5px; /* Rounded corners */
   transition: background-color 0.3s; /* Smooth hover effect */
-  width: 100%; /* Full width for button */
-  max-width: 300px; /* Limit button width */
 }
 
 .event-input button:hover {
@@ -113,7 +105,6 @@ h1 {
   text-align: center;
   width: 100%; /* Ensure full width */
   color: #282c34; /* Dark text for contrast */
-  position: relative;
 }
 
 .footer-content {
