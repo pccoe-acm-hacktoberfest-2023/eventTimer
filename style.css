@@ -22,7 +22,7 @@ body {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.7); /* Black with transparency */
   border-radius: 10px; /* Rounded corners */
-  padding: 20px; /* Add some padding */
+  padding: 30px; /* Increase padding for a more spacious feel */
   max-width: 600px; /* Limit max width for better readability */
   margin: 20px auto; /* Center the container horizontally */
 }
@@ -35,12 +35,17 @@ h1 {
 
 .event-input {
   margin-bottom: 20px;
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack inputs and button vertically */
+  align-items: center; /* Center items */
 }
 
 .event-input input {
   padding: 10px;
   font-size: 16px;
-  margin-right: 10px;
+  margin-bottom: 10px; /* Add space below inputs */
+  width: 100%; /* Full width for inputs */
+  max-width: 300px; /* Limit input width */
   border: none; /* No border for cleaner look */
   border-radius: 5px; /* Rounded corners */
 }
@@ -54,6 +59,8 @@ h1 {
   border: none; /* No border */
   border-radius: 5px; /* Rounded corners */
   transition: background-color 0.3s; /* Smooth hover effect */
+  width: 100%; /* Full width for button */
+  max-width: 300px; /* Limit button width */
 }
 
 .event-input button:hover {
@@ -72,7 +79,7 @@ h1 {
   margin: 10px 0;
   border-radius: 10px;
   width: 100%;
-  max-width: 500px;
+  max-width: 500px; /* Maintain maximum width */
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
   transition: transform 0.2s; /* Smooth transform on hover */
@@ -138,8 +145,5 @@ h1 {
 @media (max-width: 600px) {
   h1 {
       font-size: 2rem; /* Reduce font size on smaller screens */
-  }
-  .event-input input {
-      width: 80%; /* Make inputs responsive */
   }
 }
