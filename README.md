@@ -64,14 +64,14 @@ You can ask questions by raising an issue.
 - Click on the green Code button, then either the HTTPS or SSH option, and, click the icon to copy the URL. Now you have a copy of the project. Thus, you can play around with it locally on your computer.
 
 ```bash
-  git clone https://github.com/GSSoC24/being-an-GSSoc24.git
+  git clone https://github.com/<your-github-username>/eventTimer.git
 ```
 
 - Switch to the cloned folder. You can paste this command into the same terminal window. 
 
 
 ```bash
-  cd being-an-GSSoc24
+  cd eventTimer
 ```
 
 **3. Open in code Editor:**
