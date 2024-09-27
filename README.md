@@ -99,7 +99,7 @@ Use your code editor (like VS Code) to open the README.md file.
 
 - **Make the required changes to the code as per the issue told**
 
-- For example
+- For example      
   `- [Full Name](https://github.com/your-username)`
 
 **5. Stage your changes:**
