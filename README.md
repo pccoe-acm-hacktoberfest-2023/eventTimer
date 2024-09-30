@@ -17,7 +17,7 @@ Welcome to the **Event Countdown Timer** project! This web application allows us
 
 - HTML
 - CSS
-- JavaScript
+- JavaScript (have used DOM elements inside of this)
 
 ### Option 1. Complete this process in GitHub (in your browser)
 
