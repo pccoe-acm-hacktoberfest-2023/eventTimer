@@ -1,5 +1,4 @@
-# Event Countdown Timer
-# Pruthviraj Desale
+# Event Countdown Timer - Pruthviraj Desale
 
 ![Event Countdown](https://example.com/image.png) <!-- Replace with an actual image link -->
 
