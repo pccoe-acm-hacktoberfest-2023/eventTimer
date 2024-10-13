@@ -18,7 +18,7 @@ function displayEvents() {
 
       eventsContainer.innerHTML += `
         <div class="event-card">
-          <h2>${event.name}</h2>
+          <h2 class="heading-1">${event.name}</h2>
           <div class="time-box">
             <div>
               <span>${days}</span>
@@ -36,7 +36,7 @@ function displayEvents() {
               <span>${seconds}</span>
               <p>Seconds</p>
             </div>
-          </div>
+           </div> 
           <button onclick="removeEvent(${index})">Remove</button>
         </div>
       `;
