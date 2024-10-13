@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'neu';
+  src: url('./fonts/NeueMachina.ttf');
+}
+
+@font-face {
+  font-family:"hel";
+  src: url('./fonts/HelveticaNowDisplay-Light_M4nzWhve6k_k7HolyzL10.ttf');
+}
+
 body {
   font-family: 'Arial', sans-serif;
   display: flex;
@@ -67,20 +77,54 @@ h1 {
   align-items: center;
 }
 
-.event-card {
-  background-color: #3a3f47; /* Card background */
-  padding: 20px;
-  margin: 10px 0;
-  border-radius: 10px;
+
+.event-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-width: 500px; /* Maintain maximum width */
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
-  transition: transform 0.2s; /* Smooth transform on hover */
+  height: 100%;
+  background-color: #0B1120;
+  filter: blur(1.5rem);
+  -webkit-filter: blur(1.5rem); 
+  z-index: -1; 
 }
 
-.event-card:hover {
-  transform: translateY(-5px); /* Lift effect on hover */
+
+.event-card {
+  border: 2px solid yellowgreen;
+  border-bottom-color: #3e853b ;
+  border-radius: 25px;
+  font-family: 'neu';
+  position: relative;
+  overflow: hidden;
+  opacity: 1;
+  padding: 20px;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 500px; 
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transition-timing-function: linear; 
+}
+
+.heading-1{
+  color: #50DA4C;
+  font-family: 'neu';
+  font-size: 45px;
+  font-weight:bold;
+}
+
+.event-card button{
+  cursor: pointer;
+  border-radius: 8px;
+  font-family: "neu";
+  padding: 8px 40px;
+  margin-top: 19px;
+  background-color: transparent;
+  border: 1px solid rgb(230, 142, 142);
+  color: white;
 }
 
 .time-box {
